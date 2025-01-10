@@ -28,6 +28,8 @@ jobs:
             # Navigate to project folder and pull latest changes
             cd /home/ubuntu/Three_tier_blogging_website_deployment
             git pull origin main
+            chmod +x shellscript.sh
+            ./shellscript.sh
 
             # Stop existing containers, pull updated images, and restart
             sudo docker-compose down
